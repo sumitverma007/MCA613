@@ -8,45 +8,9 @@
     <link rel="stylesheet" type="text/css" href="includes/jstut.css">
     <link href='https://fonts.googleapis.com/css?family=Be Vietnam' rel='stylesheet'>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
-  <script>
-        function hidcont(){
-         document.getElementById("cntent").style.display="none";
-            document.getElementById("paraex").style.display="none";
-        }
-        function loadcntent()
-        {
-             //console.log("Ahoy scoop");
-             document.getElementById("loadbtn").style.display="none";
-                document.getElementById("cntent").style.display="block";
-           var today = new Date();
+  <script type="text/javascript" src="includes/scr.js"></script>
         
-    var dd = String(today.getDate()).padStart(2, '0');
-    var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
-    var yyyy = today.getFullYear();
-
-        today = dd + '/' + mm + '/' + yyyy;
-
-        document.getElementById("dateshow").innerHTML=today;
-                msg();
-                
-        }
-        function msg(){
-            alert("PRESS OK TO ENTER");
-        }
-        function loadpara(){
-              document.getElementById("paraex").style.display="block";
-               document.getElementById("paraexhid").style.display="none";
-        }
-        function validate(){
-            var guestname=document.forms["myform"]["name"].value;
-            var gname=guestname.toUpperCase();
-           
-            document.getElementById("formtar").style.display="none";
-             document.getElementById("greet").innerHTML="Hello <strong>"+gname+" </strong>.Have a Nice Day!!";
-
-        }
         
-          </script>
 </head>
 
 <body onload="hidcont()">
