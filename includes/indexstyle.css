@@ -5,48 +5,50 @@ body{
 .container{
      
         text-align:center;
-        background-color: #0c0f4f;
+        background-color:#2a5954;
         padding:10px 10px 10px 10px;
-        color:#ffcee7;
+        color:#c9e6dd;
         font-weight: bold;
       
 }
+
 .htmlhead{
      /* margin-left:10px; */
      /* padding:auto; */
-     color:#61457b;
+     /* color:#61457b; */
      font-weight:bold;
-     background-color: #e0dfe7;
+     background-color:#ececef73;
      padding-bottom: 20px;
      padding-left: 6px;
      border-radius: 8px;
 
 }
-.htmlheadl{
+a.htmlheadl{
     text-decoration: none;
-    /* padding:14px 25px ; */
-    /* padding-left: 10px; */
+    color:#72140b;
+    
 
 }
 .htmlheadl :hover{
    /* background-color: red; */
-   color:red;
+   color:darkgreen;
 }
 .htmldesc{
      margin-left:15px;
      /* margin-top:15px; */
-     color:black;
+     color:#dbf7f8;
      margin-bottom: 19px;
      padding:10px;
-     background-color: lightgray;
+     background-color:  #364a40;
      font-size:20px;
+     border-radius: 27px;
 }
 a.explore{
     margin-left: 558px;
      padding:5px;
-     background-color:rgb(22,31,72);
-     /* color:red; */
-     color:#e7e6eb;
+     background-color:rgb(187 21 71);
+    
+     color:#e8e7d1;
      text-decoration: none;
      border-radius:18px;
 
