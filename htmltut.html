@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+ <title>HTML-HOME</title>
+    <meta name="author" content="Sumit Kumar Verma">
+    <meta name="description" content="Brief Introduction about Html">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+   <body>
+   
+      <header> 
+      <a href="index.html">BACK TO HOME</a>
+         <h1><abbr title="Hypertext Markup Language">HTML</abbr></h1>
+      </header>
+     <main> 
+            <h3>This Page may not look eye catchy but this is what HTML is capable of.It basically structure the different elements of webpage.<br><br>This complete page is designed using plain HTML.</h3>
+           
+            <hr>
+       
+            <p>If you see at the title bar it says HTML-HOME it can be done using &lt;title&gt; tag.<br> We'll be discussing different tags of HTML here.<br>You might have noticed till now
+            that complete section is a paragraph and yes we can write a paragraph using &lt;p&gt; tag.
+             </p>
+             <hr>
+             <section>
+             <u><h3>HISTORY</h3></u>
+             <p>
+               HTML was introduced by <b>TIM BERNERS-LEE </b> in <i>1991</i> .You can read more about him from <a href="https://www.w3.org/People/Berners-Lee/">HERE.</a>
+               <br>
+               <figure>
+                    <img src="img/tim.jpg" alt="Tim Berners Lee" width="400" height="400">
+                     <figcaption>Fig:Tim Berners-LEE</figcaption>
+                </figure>
+                </p>
+                </section>
+                <hr>
+                <section>
+                <u> <h3>LISTS</h3></u>
+                <p>What are lists in html?Lists are nothing but a well arrangement of items.<br>
+                Consider an example where we have to list name of different programming languages.we can write C++,JAVA,PYTHON.But we can write this in a better way 
+                .</p>
+                <ul> 
+                    <li>C++</li>
+                    <li>JAVA</li>
+                    <li>PYTHON</li>
+                </ul>
+                <p>We can also number the items in list .This way of dispalying list is called Ordered List</p>
+                <ol>
+                   <li>C++</li>
+                   <li>JAVA</li>
+                   <li>PYTHON</li>
+                </ol>
+                </seection>
+                <hr>
+              <section>
+                <u><h3>DESCRIPTION LIST</h3></u>
+                <p>Suppose in earlier example we have to define the languages as well.<br>
+                How Can we do it?Well HTML provides a way to write this using description list.</p>
+                <dl>
+                    <dt>C++</dt>
+                    <dd>C++ is a object oriented language ...</dd>
+                     <dt>JAVA</dt>
+                    <dd>JAVA is a object oriented language ...</dd>
+                     <dt>PYTHON</dt>
+                    <dd>PYTHON is a object oriented language ...</dd>
+
+                </dl>
+                </section>
+
+             <hr>
+             <section>
+<h3><u>iFRAMES</u></h3>
+<p>iFrames in HTML are used to embed a web Page inside a web page.<br>
+Below You can see our home page .We can do this using &lt;iframe&gt; tag.</p>
+<iframe src="index.html" height="500" width="1200" title="index"></iframe>
+</section>
+<hr>
+<section>
+<u><h3>HTML FORMS</h3></u>
+In HTML forms are used to send data from Client side to server side .To display form HTML uses &lt;form&gt; tag.<br>
+Below is an example of HTML form.<br>
+<br>
+<form action ="#" method="POST">
+ <label for="name">Name </label>
+
+ <input type="text" id="name" name="name"><br>
+  <label for="gender">Gender</label>
+  <input type="radio" id="male" name="gender" value="male">
+  <label for="male">Male</label>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">Female</label>
+  <input type="radio" id="other" name="gender" value="other">
+  <label for="other">Other</label>
+  <br>
+  <input type="submit" value="Submit">
+</form>
+</section>
+<hr>
+<section>
+<u><h3>YOUTUBE videos.</h3></u>
+<p>Now with HTML5 we can embed audio/video from other sources in our page.</p>
+          <iframe width="520" height="315"
+src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&mute=1">
+</iframe>
+</section>
+<hr>
+
+     </main>
+
+
+<footer>
+    <p>&copy;Sumit Kumar Verma</p>
+    
+</footer>
+   </body>
+</html>

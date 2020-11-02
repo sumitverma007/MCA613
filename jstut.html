@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home-JAVASCRIPT</title>
+    <meta name="author" content="Sumit Kumar Verma">
+    <meta name="description" content=" Introduction about JAVASCRIPT">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="includes/jstut.css">
+    <link href='https://fonts.googleapis.com/css?family=Be Vietnam' rel='stylesheet'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+  <script>
+        function hidcont(){
+         document.getElementById("cntent").style.display="none";
+            document.getElementById("paraex").style.display="none";
+        }
+        function loadcntent()
+        {
+             //console.log("Ahoy scoop");
+             document.getElementById("loadbtn").style.display="none";
+                document.getElementById("cntent").style.display="block";
+           var today = new Date();
+        
+    var dd = String(today.getDate()).padStart(2, '0');
+    var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+    var yyyy = today.getFullYear();
+
+        today = dd + '/' + mm + '/' + yyyy;
+
+        document.getElementById("dateshow").innerHTML=today;
+                msg();
+                
+        }
+        function msg(){
+            alert("PRESS OK TO ENTER");
+        }
+        function loadpara(){
+              document.getElementById("paraex").style.display="block";
+               document.getElementById("paraexhid").style.display="none";
+        }
+        function validate(){
+            var guestname=document.forms["myform"]["name"].value;
+            var gname=guestname.toUpperCase();
+           
+            document.getElementById("formtar").style.display="none";
+             document.getElementById("greet").innerHTML="Hello <strong>"+gname+" </strong>.Have a Nice Day!!";
+
+        }
+        
+          </script>
+</head>
+
+<body onload="hidcont()">
+ <button onclick="loadcntent()" class="block" id="loadbtn"  >Click to Load Content</button> 
+<div id="cntent">
+ <div class="container" >
+       <h1>JAVASCRIPT</h1>
+    </div>
+   
+    <a href="index.html" class="bth" ><h2><i class="fas fa-chevron-circle-left"></i> Back to Home</h2></a>
+
+<main>
+        <div class="container" style="background-color:#f5f5f5;color:#0e1010;">
+                    <h2>INTRODUCTION</h2>
+                    <p>
+                       Javascript is a language of web .It provides behaviour to the web page.It is a high level ,Dynamic and untyped 
+                       language.
+                    </p>
+            </div>
+             <div class="contentbox">
+                <h2>Events in Javascript</h2>
+                <p>
+                HTML events are "things" that happen to HTML elements.<br>
+
+                   When JavaScript is used in HTML pages, JavaScript can "react" on these events.</p>
+                   <p>For example click on the button below.</p>
+                   <button class="block" onclick="loadpara()" id="paraexhid">Click Here to Invoke an Event.</button>
+                   <p id="paraex">
+                    When you clicked on button .An event <i>Clicking on button </i>takes place and hence it invoked an action.
+                   </p>
+             </div>
+
+             <div class="contentbox">
+              <h2>Functions in Javascript</h2>
+              <p>Javascipt allows user to write user defined function  to perform a particular task.</p>
+              <p>For example Fill the Following field and press the button.</p>
+<div id="formtar">
+  <form name="myform" method="POST">
+    <label for="name">Enter Your Name</label>
+    <input type="text" id="name" name="name" placeholder="Your name.." required>
+ 
+  </form>
+  <button class="submitf" onclick="validate()">Submit</button>
+</div>
+<p id="greet"></p>
+</div>
+
+</main>
+<footer>
+   <p>&copy; Sumit Kumar Verma</p>
+   <p id="dateshow"></p>
+</footer>
+
+</div>
+</body>
+</html>

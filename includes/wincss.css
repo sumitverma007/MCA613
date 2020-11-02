@@ -1,0 +1,45 @@
+body{
+    font-family:'Be Vietnam';
+}
+.container{
+     
+    text-align:center;
+    background-color: #053e2d;
+    padding:10px 10px 10px 10px;
+    color:#c2eef1;
+    font-weight: bold;
+  
+}
+a.bth{
+     text-decoration: none;
+     color:green;
+}
+a.bth :hover{
+     color:red;
+}
+.contentbox{
+    margin-top:10px;
+    padding:10px 10px 10px 10px;
+    font-weight: bold;
+    background-color:#f5f5f5;
+    color:#0e1010;
+}
+.contentbox h2{
+     color:darkgreen;
+}
+a{
+     text-decoration: none;
+     color:darkgreen;
+     
+}
+a:hover{
+    color:darkred;
+
+}
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color: #181210;
+    color: white;
+    margin-top: 35px;
+  }
